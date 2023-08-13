@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <link rel="stylesheet" href="css/price.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+</head>
+<style>
+    :root{
+    --red:crimson;
+    --green:#53bf9d;
+    --yellow:#ffc54d;
+    --white:whitesmoke;
+}
+body{
+    font-family: poppins;
+    background: #eee;
+    background: url(img/bg_4.jpg);
+    background-size: cover;
+}
+.wrapper{
+    width: 900px;
+    margin: 7% auto;
+}
+header a{
+    text-decoration: none;
+    color: var(--yellow);
+}
+header i,nav i{
+    margin-right: .5em;
+}
+
+header{
+    display: flex;
+    padding: .7em;
+    row-gap: 1em;
+    flex-wrap: wrap;
+}
+
+#logo{
+    flex: 3;
+    font-size: 1.5em;
+    min-width: 320px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+nav{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    flex: 1;
+    min-width: 120px;
+}
+nav a:hover{
+    color: whitesmoke;
+}
+.section{
+    width: 30%;
+    height: 300px;
+    background: #262626;
+    float: left;
+    margin-top: 2%;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.5);
+    text-align: center;
+    transition: 0.9s;
+    color: white;
+    padding-top: 200px;
+    margin: 0.3cm;
+    border-radius: 10px;
+}
+.section:hover{
+    background-color: var(--yellow);
+    box-shadow: 0 0 15px rgba(0,0,0,1);
+    transform: scale(1.1);
+    border-radius: 40px;
+}
+#starters{
+    background: url(img/menu/Bhutta.jpg);
+    background-size: cover;
+}
+#maincourse{
+    background: url(img/menu/mottun.jpg);
+    background-size: cover;
+}
+#chat{
+    background: url(img/menu/fer.jpg);
+    background-size: cover;
+}
+
+</style>
+        
+<body>
+    <header>
+        <a href="index.html" id="logo"><i class="fa-solid fa-utensils"></i>Spicy Hut</a>
+        <nav>
+            <a href="/menu"><i class="fa-solid fa-bars"></i>Menu</a>
+            <a href="#lochead"><i class="fa-solid fa-location-pin"></i>Location</a>
+        </nav>
+    </header>
+       
+    <div class="wrapper">
+        <a href="starters.html">
+            <div class="section" id="starters">
+                <div class="starters">
+                    <h1>STARTERS</h1>
+                </div>
+            </div>  
+        </a>
+        <a href="main.html">
+            <div class="section" id="maincourse">
+                <div class="maincourse">
+                    <h1>MAIN COURSE</h1>
+                </div>
+            </div>   
+        </a>
+        <a href="chat.html">
+            <div class="section" id="chat">
+                <div class="chat">
+                    <h1>CHAT</h1>
+                </div> 
+            </div>   
+        </a>
+        
+    </div>
+</body>
+</html>
